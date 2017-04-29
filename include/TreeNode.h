@@ -5,5 +5,6 @@ class TreeNode {
     int value;
     bool visited;
     bool isNull;
+    TreeNode();
     void setValue(int val);
 };
