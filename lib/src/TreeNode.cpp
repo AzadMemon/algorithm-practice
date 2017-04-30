@@ -1,10 +1,12 @@
+#include <cstddef>
+
 class TreeNode {
   public:
     TreeNode* left;
     TreeNode* right;
-    int value = -1;
+    int value;
     bool visited = false;
-    bool isNull = true;
+    bool isEmpty = true; // TODO: Find a better way to check if a treenode has a value
 
     TreeNode();
     void setValue(int val);
@@ -12,15 +14,12 @@ class TreeNode {
 };
 
 TreeNode::TreeNode() {
-  TreeNode leftn;
-  TreeNode rightn;
-
-  left = &leftn;
-  right = &rightn;
+  left = NULL;
+  right = NULL;
 }
 
 void TreeNode::setValue(int val) {
-  isNull = false;
+  isEmpty = false;
   value = val;
 }
 
