@@ -16,4 +16,6 @@
 **/*/.idea/**/uiDesigner.xml
 
 
-
+# Output
+**/*/out/
+**/*/*.class

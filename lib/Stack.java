@@ -1,5 +1,5 @@
 public class Stack<T> {
-    private class StackElement<T> {
+    class StackElement<T> {
         public T data;
         public StackElement<T> next;
 
@@ -8,12 +8,12 @@ public class Stack<T> {
         }
     }
 
-    private T top;
+    public StackElement<T> top;
 
-    public StackElement<T> pop() {
+    public T pop() {
         StackElement<T> oldTop = top;
         top = top.next;
-        return oldTop;
+        return oldTop.data;
     }
 
     public void push(T data) {
