@@ -22,7 +22,7 @@ public class Main {
 
         return memo[sum];
     }
-v 
+v
     public static void main(String[] args) {
         int target = 6;
         int[] memo = new int[target];
